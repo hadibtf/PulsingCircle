@@ -1,14 +1,33 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
 }
 
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'com.github.pulsingcircle'
+            artifactId = 'pulsingcircle'
+            version = '1.0'
+
+            afterEvaluate {
+                from components.release
+            }
+        }
+    }
+}
+
 android {
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
     namespace 'com.android.pulsingcircle'
     compileSdk 33
     defaultConfig {
-        applicationId "com.android.pulsingcircle"
         minSdk 21
         targetSdk 33
         versionCode 1
