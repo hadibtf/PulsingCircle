@@ -4,7 +4,7 @@
 A cool animation you can use in your Compose app!
 
 ![demo-1.gif](https://github.com/hadibtf/PulsingCircle/blob/master/demo/demo-1.gif "Demo Gif")
-![demo-1.jpg](https://github.com/hadibtf/PulsingCircle/blob/master/demo/demo-1.jpg "Demo Picture")
+![demo-1.png](https://github.com/hadibtf/PulsingCircle/blob/master/demo/demo-1.png "Demo Picture")
 
 
 ## Installation
