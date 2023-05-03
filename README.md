@@ -23,7 +23,7 @@ And then add this dependency to your Project build.gradle
 
 ```bash
 dependencies {
-    implementation 'com.github.hadibtf:PulsingCircle:1.0.0'
+    implementation 'com.github.hadibtf:PulsingCircle:1.0.1'
 }
 ```
 
